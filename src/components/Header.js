@@ -1,6 +1,8 @@
+import React from "react";
 
 
-function Header(){
+function Header(props){
+  
     return (
         <header className="d-flex justify-between align-center ">
         <div className="headerLeft d-flex align-center">
@@ -11,8 +13,8 @@ function Header(){
         </div>
         </div>
         
-        <ul className="headerRight d-flex">
-          <li className="mr-30">
+        <ul className="headerRight d-flex cu-p">
+          <li className="mr-30" onClick={props.onClickCart}>
           <img height={18} width={18}  src="img/cart.svg" alt="Cart"/>
             <span>1205 руб.</span>
           </li>
